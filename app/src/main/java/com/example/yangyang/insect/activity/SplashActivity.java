@@ -29,6 +29,13 @@ public class SplashActivity extends BaseActivity {
                 startActivity(intent);
             }
         },4300);
+
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
     }
 
     private void initView() {
@@ -45,4 +52,5 @@ public class SplashActivity extends BaseActivity {
         animation_scale.setDuration(3000);
         tv_chongqu.startAnimation(animation_scale);
     }
+
 }
