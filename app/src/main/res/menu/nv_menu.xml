@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
+    <group
+        android:checkableBehavior="single">
         <item
-            android:title="one"
-            android:icon="@mipmap/ic_launcher"
-            android:id="@+id/nv_item_one"/>
+            android:title="    识别纪录"
+            android:icon="@drawable/sbls" />
         <item
-            android:title="two"
-            android:icon="@mipmap/ic_launcher"
-            android:id="@+id/nv_item_two"/>
+            android:title="   我的收藏"
+            android:icon="@drawable/wdsc" />
         <item
-            android:title="three"
-            android:icon="@mipmap/ic_launcher"
-            android:id="@+id/nv_item_three"/>
+            android:title="   我的关注"
+            android:icon="@drawable/wdgz" />
+        <item
+            android:title="   个人中心"
+            android:icon="@drawable/grzx"/>
+        <item
+            android:title="   版本更新"
+            android:icon="@drawable/bbgx" />
+        <item
+            android:title="   关于我们"
+            android:icon="@drawable/gywm" />
 
     </group>
 </menu>

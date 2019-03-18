@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.FindFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--上部分-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v4.view.ViewPager
+                android:nestedScrollingEnabled="true"
+                android:id="@+id/vp_find"
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+            </android.support.v4.view.ViewPager>
+            <!--文字和点-->
+            <LinearLayout
+                android:padding="2dp"
+                android:orientation="vertical"
+                android:background="#90a3a7a5"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="43dp">
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:id="@+id/tv_news"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <!--下部分-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_find"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</ScrollView>

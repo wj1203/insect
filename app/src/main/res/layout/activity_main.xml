@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <android.support.v7.widget.Toolbar
@@ -16,7 +16,124 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize">
             </android.support.v7.widget.Toolbar>
-        </LinearLayout>
+            <!--fragment容器-->
+            <RelativeLayout
+                android:id="@+id/rl_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/toolbar"
+                android:layout_above="@id/ll_three">
+
+            </RelativeLayout>
+            <!--主页的选项-->
+            <LinearLayout
+                android:id="@+id/ll_three"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <!--首页-->
+                <RelativeLayout
+                    android:gravity="center"
+                    android:id="@+id/rl_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:text="首页"
+                        android:textColor="#123321"
+                        android:textSize="16sp"
+                        />
+                </RelativeLayout>
+                <!--发现-->
+                <RelativeLayout
+                    android:gravity="center"
+                    android:id="@+id/rl_find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_find"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:text="发现"
+                        android:textColor="#123321"
+                        android:textSize="16sp"
+                        />
+                </RelativeLayout>
+                <!--识别-->
+                <RelativeLayout
+                    android:gravity="center"
+                    android:id="@+id/rl_recognition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:text="📷"
+                        android:textSize="25dp"
+                        android:id="@+id/tv_camera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        />
+                </RelativeLayout>
+                <!--视频-->
+                <RelativeLayout
+                    android:gravity="center"
+                    android:id="@+id/rl_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tv_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:text="视频"
+                        android:textColor="#123321"
+                        android:textSize="16sp"
+                        />
+                </RelativeLayout>
+                <!--图鉴-->
+                <RelativeLayout
+                    android:gravity="center"
+                    android:id="@+id/rl_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_picture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:text="图鉴"
+                        android:textColor="#123321"
+                        android:textSize="16sp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
         <android.support.design.widget.NavigationView
             android:layout_gravity="left"
             app:menu="@menu/nv_menu"

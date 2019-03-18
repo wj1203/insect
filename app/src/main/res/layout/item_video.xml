@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:id="@+id/jc_video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cv_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+           android:layout_marginLeft="10dp"
+            android:src="@drawable/head" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="0dp"
+            android:padding="15dp"
+            android:text="钢铁小处男" />
+
+        <ImageView
+            android:id="@+id/iv_zan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="90dp"
+            android:src="@drawable/zan" />
+
+        <ImageView
+            android:id="@+id/iv_comment"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/comment" />
+</RelativeLayout>
+    <View
+        android:background="@android:color/black"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <com.example.yangyang.insect.custom.MyListView
+        android:id="@+id/lv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.example.yangyang.insect.custom.MyListView>
+</LinearLayout>
